@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="signin.css" rel="stylesheet">
+    <title>NV14</title>
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/components/jquery/jquery.min.js"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    $ctrlDown = false;
+
+    $(document).keydown(function(e) {
+        if (e.keyCode == 17 || e.keyCode == 91) $ctrlDown = true;
+    }).keyup(function(e) {
+        if (e.keyCode == 17 || e.keyCode == 91) $ctrlDown = false;
+    });
+  </script>
+  </head>
+  <body>
+
+<div class="container">
+
+      <form class="form-signin" style="max-width: 500px; padding: 15px; margin: 0 auto;"  action="#" method="get">
+        <h2 class="form-signin-heading">UndergroundFPV</h2>
+        <div class="alert alert-info" id="link">
+		<a href="https://drive.google.com/uc?export=download&id=1Qvw0RQymSI2Fjei-G7DIYOvfVkLGQSy3">Updater 0.94 Windows x64 with drivers</a><br/>
+		<a href="https://drive.google.com/uc?export=download&id=1Q0OVmPILTUHIeqoPOPB1G2W0ExYlUwav">Updater 0.94 Windows x32 with drivers</a><br/>
+		<a href="https://drive.google.com/uc?export=download&id=1gVybnzDsVZ27oSTsq9GKjM0gdgzMVOL3">Updater 0.94 Linux x64</a><br/>
+		<a href="https://drive.google.com/uc?export=download&id=1XLp0ITcM_KSjE_Hq2P8F8cyrH9pYlxqD">Beta Updater 0.94 MacOS x64</a><br/>
+        <a href="http://macappstore.org/libusb/">libusb on Mac OS</a><br/></div>
+      </form>
+
+    </div>
+
+ </body>
+</html>
